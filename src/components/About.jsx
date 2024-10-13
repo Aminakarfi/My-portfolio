@@ -1,4 +1,4 @@
-// src/components/About.js
+
 import React from 'react';
 import myImage from '../assets/IMG-20241008-WA0050.jpg';
 import image2 from '../assets/1728847418367.jpg';

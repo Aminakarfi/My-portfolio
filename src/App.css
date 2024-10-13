@@ -1,27 +1,27 @@
-/* App.css */
+
 
 body {
-  font-family: 'Roboto', sans-serif; /* Utilise la police Roboto */
+  font-family: 'Roboto', sans-serif; 
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
 }
 
 h1 {
-  font-size: 2.5rem; /* Titre principal */
+  font-size: 2.5rem; 
   text-align: center;
 }
 
 h2 {
-  font-size: 2rem; /* Titres des sections */
+  font-size: 2rem; 
   color: #6F4C3E;
   margin-top: 20px;
 }
 
 p {
-  font-size: 1.2rem; /* Taille du texte de description */
-  line-height: 1.5; /* Espacement entre les lignes */
-  color: #333; /* Couleur du texte */
+  font-size: 1.2rem;
+  line-height: 1.5; 
+  color: #333; 
 }
 
 section {
@@ -33,12 +33,23 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 img {
-  max-width: 100%; /* Ensures the image does not exceed the width of its container */
-  height: auto; /* Maintains the aspect ratio */
-  border-radius: 8px; /* Keeps your previous styling */
-  transition: transform 0.3s ease; /* Animation on hover */
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 8px;
+  transition: transform 0.3s ease; 
 }
 
 img:hover {
-  transform: scale(1.05); /* Slightly enlarges the image on hover */
+  transform: scale(1.05); 
+}
+a {
+  color: #6F4C3E; 
+  text-decoration: none; 
+  font-size: 1.2rem; 
+  font-weight: 700; 
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #8B5A3E; 
 }
