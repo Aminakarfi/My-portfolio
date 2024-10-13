@@ -1,38 +1,44 @@
-.App {
+/* App.css */
+
+body {
+  font-family: 'Roboto', sans-serif; /* Utilise la police Roboto */
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  font-size: 2.5rem; /* Titre principal */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 2rem; /* Titres des sections */
+  color: #6F4C3E;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-size: 1.2rem; /* Taille du texte de description */
+  line-height: 1.5; /* Espacement entre les lignes */
+  color: #333; /* Couleur du texte */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+img {
+  max-width: 100%; /* Ensures the image does not exceed the width of its container */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 8px; /* Keeps your previous styling */
+  transition: transform 0.3s ease; /* Animation on hover */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img:hover {
+  transform: scale(1.05); /* Slightly enlarges the image on hover */
 }
