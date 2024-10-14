@@ -1,0 +1,14 @@
+.experience {
+    padding: 20px;
+    background-color: #e8d6c0;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease, transform 1s ease; 
+    border-radius: 8px; 
+  }
+  
+  .experience.show {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+  

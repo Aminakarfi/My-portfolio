@@ -1,0 +1,19 @@
+.image-slide {
+    opacity: 0;
+    transform: translateX(-100%); 
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .image-slide.show {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+  
+  .image-slide.right {
+    transform: translateX(100%); 
+  }
+  
+  .image-slide.right.show {
+    transform: translateX(0); 
+  }
+  

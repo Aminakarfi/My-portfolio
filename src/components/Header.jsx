@@ -1,9 +1,19 @@
-
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import './Header.css'
 
 const Header = () => {
+  const [showHeader, setShowHeader] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowHeader(true);
+    }, 1000); 
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <header style={{ backgroundColor: '#6F4C3E', color: 'white', padding: '20px', textAlign: 'center' }}>
+    <header className={`header ${showHeader ? 'show' : ''}`}>
       <h1>Portfolio De Amina Karfi</h1>
     </header>
   );

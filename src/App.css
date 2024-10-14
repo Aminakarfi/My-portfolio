@@ -1,27 +1,27 @@
-
-
 body {
   font-family: 'Roboto', sans-serif; 
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: #ffeef8; /* Light pink background */
 }
 
 h1 {
   font-size: 2.5rem; 
   text-align: center;
+  color: #4a250e; /* Deep pink */
 }
 
 h2 {
   font-size: 2rem; 
-  color: #6F4C3E;
+  color: #4a250e; /* Medium pink */
   margin-top: 20px;
 }
 
 p {
   font-size: 1.2rem;
   line-height: 1.5; 
-  color: #333; 
+  color: #4a2d12; /* Darker pink */
+
 }
 
 section {
@@ -29,9 +29,10 @@ section {
   padding: 20px;
   margin: 20px;
   border-radius: 8px;
-  background-color: white;
+  background-color: #551c1479; /* Soft pink */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 img {
   max-width: 100%; 
   height: auto; 
@@ -42,8 +43,9 @@ img {
 img:hover {
   transform: scale(1.05); 
 }
+
 a {
-  color: #6F4C3E; 
+  color: #6d23114a; /* Deep pink */
   text-decoration: none; 
   font-size: 1.2rem; 
   font-weight: 700; 
@@ -51,5 +53,31 @@ a {
 }
 
 a:hover {
-  color: #8B5A3E; 
+  color: #3a221346; /* Medium pink */
+}
+
+.carousel {
+  overflow: hidden; /* Hide overflow to show only one image at a time */
+  position: relative;
+  width: 100%; /* Adjust as needed */
+}
+
+.carousel-inner {
+  display: flex; /* Arrange images in a row */
+  transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.carousel-item {
+  min-width: 100%; /* Ensure each item takes full width */
+  transition: opacity 0.5s ease; /* Fade in/out effect */
+  opacity: 0; /* Start hidden */
+}
+
+.carousel-item.active {
+  opacity: 1; /* Show active item */
+}
+
+.carousel-image {
+  width: 100%; /* Ensure images take full width */
+  height: auto; /* Maintain aspect ratio */
 }

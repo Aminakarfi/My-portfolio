@@ -1,0 +1,15 @@
+.header {
+    background-color: #6F4C3E;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(-20px);
+    opacity: 0; 
+    transition: transform 0.5s ease, opacity 0.5s ease; 
+  }
+  
+  .header.show {
+    transform: translateY(0);
+    opacity: 1; 
+  }
+  
